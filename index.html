@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meu primeiro site com JavaScript</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<h1>Meu primeiro site com JavaScript</h1>
+
+<main>
+
+<!-- QUADRO DO HORÁRIO -->
+<section class="quadro">
+<h2>Horário atual</h2>
+<p id="horario">00:00:00</p>
+</section>
+
+<!-- QUADRO DE VERIFICAÇÃO DE IDADE -->
+<section class="quadro">
+<h2>Entrada no evento</h2>
+
+<form id="formulario">
+<input
+type="number"
+id="idade"
+placeholder="Digite sua idade"
+min="0"
+max="120"
+required
+>
+
+<button type="submit">Verificar idade</button>
+</form>
+
+<p id="mensagem" role="status" aria-live="polite"></p>
+</section>
+
+<!-- QUADRO DE APARÊNCIA -->
+<section class="quadro">
+<h2>Aparência do site</h2>
+
+<button type="button" id="mudarTema">
+Mudar tema
+</button>
+</section>
+
+</main>
+
+</body>
+</html>
